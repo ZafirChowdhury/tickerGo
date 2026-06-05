@@ -42,7 +42,11 @@ func main() {
 		fmt.Println("Get back to work!")
 
 		count++
-		workFlag = false
+		if workFlag {
+			workFlag = false
+		} else {
+			workFlag = true
+		}
 	}
 
 	fmt.Println("\nCongratulation on getting your work done")
