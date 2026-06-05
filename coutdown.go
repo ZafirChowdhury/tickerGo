@@ -12,7 +12,7 @@ func coutdown(duration time.Duration, msg string) {
 
 		fmt.Print("\r\033[K")
 		fmt.Print("\r")
-		fmt.Printf("%s%d", msg, int(duration.Seconds()))
+		fmt.Printf("%s%d Seconds", msg, int(duration.Seconds()))
 
 		time.Sleep(time.Second)
 		duration -= time.Second
